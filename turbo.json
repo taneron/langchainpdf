@@ -1,16 +1,21 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "globalDependencies": ["**/.env"],
-    "tasks": {
-      "build": {
-        "dependsOn": ["^build"],
-        "outputs": ["**/dist/**"]
-      },
-      "lint": {
-        "dependsOn": ["^lint"]
-      },
-      "format": {
-        "dependsOn": ["^format"]
-      }
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env"],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["**/dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "format": {
+      "dependsOn": ["^format"]
     }
   }
+}

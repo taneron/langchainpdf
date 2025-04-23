@@ -1,5 +1,5 @@
 import { Client } from '@langchain/langgraph-sdk';
-import { graph } from './src/retrieval_graph/graph.js';
+// import { graph } from './src/retrieval_graph/graph.js';
 import dotenv from 'dotenv';
 
 // Load environment variables from .env file
@@ -28,7 +28,7 @@ async function runDemo() {
   console.log('Thread created with ID:', thread.thread_id);
 
   // Example question
-  const question = 'What is this document about?';
+  const question = 'Worum geht es in diesem Dokument?';
 
   console.log('\n=== Streaming Example ===');
   console.log('Question:', question);
