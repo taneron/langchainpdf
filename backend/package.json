@@ -7,7 +7,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm run langgraph:dev -p 80 -h 0.0.0.0",
+    "dev": "pnpm run langgraph:dev -p 10000 -h 0.0.0.0",
     "build": "tsc",
     "clean": "rm -rf dist",
     "demo": "npx tsx demo.ts",
